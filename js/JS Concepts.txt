@@ -1,0 +1,319 @@
+JS Concepts
+
+1. Functions- Arrow Function, HOF, Callback Function.
+2. Array Methods- Map, Filter, Find
+3. Objects
+4. Destructuring
+5. Spread and Rest operators
+6. Modules
+7. Var, let, and const
+8. Promise
+
+React JS Concepts
+
+1. React JS, Features, Advantages, Disadvantages, History.
+2. React Install, React Elements
+3. JSX
+4. State, Hooks
+5. Components
+6. Props
+7. Ref
+8. Condition Rendering
+9. Form Handling
+10. Context
+11. Component Life Cycle Methods, API Handling
+12. Routing
+13. Advance Hooks
+14. Redux Toolkit
+15. Applying CSS
+
+
+Declaration Of the Variables
+
+	Syntax: variableDeclaration Identifier = value
+
+
+		var, let, const
+
+		var a = 10;
+		let b = 20;
+		const c = 30;
+
+		Var		let		Const
+
+	D&I	T		T		T
+	D	T		T		F
+	I	T		T		F
+	RD	T		F		F
+	RI	T		T		F
+
+Function :
+ It is a block of code that we can reuse n times.
+
+	1. Arrow Function 
+		It is a syntactic sugar.
+
+		syntax: ([parameters]) => {//code}
+		
+			variable Declaration identifier = func
+
+		let arrow = ()=>{
+			clg("I am a arrow function")
+		}
+		arrow();
+
+		case1: If we have only one line of execution, then no need to use the curly brackets.
+		syntax: ([parameter])=>//code
+
+		let arrow1 = ()=> clg("I am a arrow1 function")
+
+		case2: If we don't have any parameters then no need to use the parentheses.
+
+		syntax: _/$ => {//code}
+
+		Case3: If we have only one parameter, then no need to use the parentheses.
+			
+		syntax: username => {//code}
+
+
+		Implicit return
+		
+		If We have only one line of execution and we want to return that then no need to use the return keyword and curly brackets.
+
+		syntax: ()=>//code
+
+
+
+Higher Order Function
+	The function which accepts another function as an argument then that function we call it as a HOF.
+
+Callback function
+
+	The function we are passing as an argument that function we call it a callback function.
+
+	let cal = (a,b,operation) => operation(a,b)
+
+	let add = (a,b)=> clg(a+b)
+	let sub = (a,b)=> clg(a-b)
+
+	cal(10,20,add)
+
+
+
+Array Methods([])
+
+It is a collection of multiple data. We are storing all the data in a single variable.
+
+
+let arr = [1,2,"hello",4,5,6,"morning"]
+
+	clg(arr[2]) //3
+
+	o/p: [2,4,6]
+
+	let evenArray = []
+
+	for(let i=0;i<arr.lenght;i++){
+		if(arr[i]%2 === 0){
+			evenArray.push(arr[i])
+		}
+	}
+
+	clg(evenArray) //[2,4,6]
+
+
+	for(let i = 0;i<arr.lenght;i++){
+
+		if(arr[i] == "hello"){
+			clg(arr[i])
+			break;
+		}
+	}
+
+
+1. Map: It is used to iterate over an array, and it will return a new array
+
+	syntax: arr_name.map((initial_value,index,array) => {//code})
+
+
+2. filter: It is used to filter the data based on the condition, and it will return a new array with filtered values.
+
+	syntax: arr_name.filter((initial_value,index,array) => condition)
+
+3. find: It is used to find the value based on the condition, and it will return the value.
+
+	syntax: arr_name.find((initial_value,index,array) => condition)
+
+
+Objects
+
+It is a real-time entity.
+The data will be present in key-value pairs.
+The representation of the object is "{}".
+
+	syntax: 
+	variable Declaration identifier = {
+						key: value,
+						key: value,
+						key: value
+					  }
+
+	Ways to access the object
+		1. Dot Notation
+		2. Box Notation
+
+		let obj = {
+			name:"ram",
+			age: 35
+		}
+
+		clg(obj.name)// ram
+		clg(obj.age)//35
+		clg(obj["name"])//ram
+		clg(obj["age"])//35
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Destructuring
+
+	It is used to destructure every element in the array or object.
+
+	1. Array Destructuring
+		
+		let items = ["clothes","laptop","plate","footware","bottle","bucket"] 
+
+		clg(items[3])
+		clg(items[4])
+
+
+		let [a,b,c,d,e,f] = items
+		let [,,plate] = items
+		
+		let items1 = [["clothes","laptop","plate"],"footware","bottle","bucket"]
+
+
+		let [[,,place],footware] = items1
+
+		let obj = {
+			productName:"Mobile",
+			productPrice:25000,
+			productDescription:"kjhgfbvcx"
+			production:{
+					place: "Delhi",
+					area: "Nehru Place"
+				}
+		}
+
+
+		let {productName,productPrice,productDescription} = obj
+
+		let {productDescription,production:{place,area}} = obj
+
+Spread And Rest Operator(...)
+
+If the ... are used in the RHS, we will call it as a rest operator.
+If the ... are used in the LHS, we will call it a spread operator.
+
+	
+	let arr = [1,2,3,4,5]
+	let arr2 = [6,7,8,9,10]
+
+	let arr3 = [...arr,...arr2]
+
+	let obj = {
+		name:"Ram",
+		age:55
+	}	
+	let obj2 = {
+		address:"HYD",	
+	}
+
+	let details = {
+		...obj,...obj2
+
+	}
+
+
+	let arr = [1,2,3,4,5,6]
+
+	let [a,b,c,d,...rest] = arr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
