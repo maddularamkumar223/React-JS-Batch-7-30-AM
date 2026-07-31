@@ -1,0 +1,6 @@
+Props
+
+Props means Properties
+Props are used to send data form one component to another component.
+Props are inmutable.
+Props are uni-direction.(Parent to child)
