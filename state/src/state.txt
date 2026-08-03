@@ -1,0 +1,5 @@
+It is used to store the data.
+State is mutable.
+State is used to store the "Object" Or "Null"
+State is present only class based component.
+
