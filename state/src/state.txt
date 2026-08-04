@@ -3,3 +3,17 @@ State is mutable.
 State is used to store the "Object" Or "Null"
 State is present only class based component.
 
+
+HOOKS
+
+It provides that we can use the features of class based component into the function based component.
+Always hooks are declared in the top level.
+Hooks are always start with "use"
+
+    1. useState - It will return an array/object
+    2. useRef
+    3. useContext
+    4. useSelector
+    5. useId
+    6. useDispatch
+    7. useNavigation...
