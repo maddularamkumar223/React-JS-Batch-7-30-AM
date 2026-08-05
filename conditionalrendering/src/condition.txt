@@ -1,0 +1,16 @@
+It is used to render the component based on the condition.
+
+1. if condition 
+2. if-else
+3. ternary operator
+4. short-circut method
+
+1. if = syntax: if(conditon){//code}
+
+2. if-else = syntax: if(condition){//code true}
+                     else{//code false}
+
+3. ternary = syntax: condition ? true : false;
+
+4. shortcircircut method: condition && true;
+
